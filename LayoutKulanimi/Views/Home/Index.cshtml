@@ -1,0 +1,17 @@
+﻿@model List<Urun>
+@{ 
+    //Layout = "_Layout";
+    ViewBag.Title = "Ana Sayfa @View";
+
+}
+
+<h1>Ürünlerimiz</h1>
+
+@foreach(var item in Model)
+            {
+                <p>
+                    @item.Id - @item.UrunAdi -@($"{item.Fiyat:c2}") 
+                </p>
+    
+            }
+<h2>Afiyet Olsun</h2>
