@@ -4,22 +4,18 @@
 @{ ViewBag.Title = "Kayıt ol";
 }
 <!--====== Page Title start ======-->
-<section class="page-title-area">
-    <div class="container">
-        <h2 class="title">Checkout</h2>
-        <ul class="breadcrumb-nav">
-            <li><a asp-controller="Home"asp-action="Index"Ana Sayfa></a></li>
-            <li class="active">Checkout</li>
-        </ul>
-    </div>
-</section>
+<partial name="Partials/_PageStartPartial"/>
 <!--====== Page Title End ======-->
 
 <!--====== Shoping Checkout Start  ======-->
 <section class="shoping-checkout-area section-gap">
     <div class="container">
         <div class="user-actions mb-40">
-            <p>Returning customer? <a href="#">Click here to login</a></p>
+            <p>
+                Üyeliğiniz var mı? <a asp-controller="Account" asp-action="Login"
+                                      Giriş İçin tıklayınız>
+                                    </a>
+            </p>
             <div asp-validation-summary="All" class="text-danger"></div>
         </div>
         <form method="post"asp-controller="Account"asp-action="Register">
@@ -86,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-               
+             </div>  
         </form>
     </div>
 </section>

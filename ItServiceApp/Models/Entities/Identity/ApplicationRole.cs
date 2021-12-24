@@ -16,8 +16,6 @@ namespace ItServiceApp.Models.Entities.Identity
             this.Name = name;
             this.Description = description;
         }
-
-        public string Name { get; }
         public string Description { get; set; }
     }
 }
