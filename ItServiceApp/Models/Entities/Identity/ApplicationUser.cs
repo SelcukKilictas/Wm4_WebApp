@@ -14,7 +14,7 @@ namespace ItServiceApp.Models.Entities.Identity
         public string  Name { get; set; }
         
         [StringLength(250)]
-        public string SurName { get; set; }
+        public string Surname { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.Now;
 
 
